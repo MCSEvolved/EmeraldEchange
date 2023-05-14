@@ -1,9 +1,10 @@
-import Navbar from "../Components/Navbar"
+import Navbar from "../Components/TopNavbar"
 
-function Layout() {
-    return (
-        <Navbar></Navbar>
-    )
+export default function Layout() {
+  return (
+    <>
+      <Navbar></Navbar>
+      <div>rest</div>
+    </>
+  )
 }
-
-export default Layout()
