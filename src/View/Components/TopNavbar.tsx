@@ -13,12 +13,12 @@ export default function TopNavbar(){
           <img src={MCSEvolvedLogo} className='h-10' alt='MCS'></img>
         </a>
       </div>
-      <a href='/' className='h-max'>
-        <h1 className='text-white text-2xl'>Emerald Exchange</h1>
+      <a href='/emerald-exchange' className='h-max'>
+        <h1 className='text-2xl'>Emerald Exchange</h1>
       </a>
       <div className='flex items-center w-80 justify-end'>
         <a>
-          <h1 className='text-white'>Username</h1>
+          <h1 className=''>Username</h1>
         </a>
         <AccountIcon className='h-10 w-auto ml-2' fill='#2bc0d3'></AccountIcon>
       </div>
