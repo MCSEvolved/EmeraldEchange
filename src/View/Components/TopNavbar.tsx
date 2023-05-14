@@ -1,9 +1,8 @@
-import '../Styles/TopNavBar.css'
 import { ReactComponent as PortalButtonImage } from '../Images/PortalButtonGoogle.svg'
 import { ReactComponent as AccountIcon } from '../Images/AccountIcon.svg'
 import MCSEvolvedLogo from '../Images/MCS-evolved-logo.png'
 
-function TopNavbar(){
+export default function TopNavbar(){
   return (
     <div className='bg-MCS-DarkerBlue h-14 flex items-center justify-between'>
       <div className='flex items-center w-80'>
@@ -26,5 +25,3 @@ function TopNavbar(){
     </div>
   )
 }
-
-export default TopNavbar

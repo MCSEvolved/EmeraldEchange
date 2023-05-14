@@ -1,10 +1,7 @@
-import '../Styles/App.css'
-import Layout from './Layout'
-
 export default function App() {
-  return (
-    <div>
-      <Layout></Layout>
-    </div>
-  )
+    return (
+        <div className="flex-grow flex justify-center items-center">
+            <h1 className='text-2xl font-bold text-center'>App</h1>
+        </div>  
+    )
 }
