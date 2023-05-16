@@ -8,7 +8,7 @@ export default function TopNavbar(){
       <div className='flex items-center w-80 h-full'>
         <Portal></Portal>
         <a href='/' className='h-max ml-1'>
-          <img src={MCSEvolvedLogo} className='h-8' alt='MCS'></img>
+          <img src={MCSEvolvedLogo} className='h-7' alt='MCS'></img>
         </a>
       </div>
       <a href='/emerald-exchange' className='flex items-center h-full'>
