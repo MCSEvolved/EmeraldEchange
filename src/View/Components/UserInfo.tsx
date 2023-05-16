@@ -1,5 +1,4 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import { ReactComponent as AccountIcon } from '../Images/AccountIcon.svg'
 import LoginButton from "./LoginButton";
 import ProfilePopover from "./ProfilePopover";
 
