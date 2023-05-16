@@ -1,4 +1,4 @@
-# React-Template
+# MCS Evolved React Template
 Use this template as a template for all the MCSE apps, if you want to build using react of course ;)
 
 ## Steps
