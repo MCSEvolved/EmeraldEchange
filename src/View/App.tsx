@@ -8,8 +8,8 @@ export default function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<div className="text-MCS-DarkerBlue">"mcsevolved website"</div>} />
-        <Route path="/emerald-exchange" element={<Layout />} >
-          <Route path="/emerald-exchange/" element={<Home/>} />
+        <Route path="/insert-path" element={<Layout />} >
+          <Route path="/insert-path/" element={<Home/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

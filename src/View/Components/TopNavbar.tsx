@@ -1,4 +1,4 @@
-import MCSEvolvedLogo from '../Images/logowide.svg'
+import MCSEvolvedLogo from '../Images/mcse-logo-wide.svg'
 import Portal from './Portal'
 import UserInfo from './UserInfo'
 
@@ -11,9 +11,9 @@ export default function TopNavbar(){
           <img src={MCSEvolvedLogo} className='h-7' alt='MCS'></img>
         </a>
       </div>
-      <a href='/emerald-exchange' className='flex items-center h-full'>
+      <a href='/insert-path' className='flex items-center h-full'>
         {/* <MCSAnalyserLogo className='h-5/6 w-auto'></MCSAnalyserLogo> */}
-        <h1 className='text-2xl'>Emerald Exchange</h1>
+        React Template
       </a>
       <div className='flex items-center w-80 justify-end h-full'>
         <UserInfo></UserInfo>
