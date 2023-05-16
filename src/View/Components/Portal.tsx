@@ -32,7 +32,7 @@ export default function Portal() {
       beforeLeave={rotatePortalIcon}
       >
         <Popover.Panel>
-          <div className='absolute bg-MCS-DarkerBlue rounded-br-xl h-96 w-52'>
+          <div className='absolute bg-MCS-DarkerBlue rounded-br-xl h-96 w-52 shadow-md'>
              <Asset_9 className='h-8 w-auto mb-4 mt-2 mx-2'></Asset_9>
             <Asset_10 className='h-8 w-auto mb-4 mt-2 mx-2'></Asset_10>
             <Asset_11 className='h-8 w-auto mb-4 mt-2 mx-2'></Asset_11>

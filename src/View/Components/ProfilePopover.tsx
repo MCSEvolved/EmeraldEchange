@@ -22,7 +22,9 @@ export default function ProfilePopover({ isAuthenticated, userPicture }: Props) 
         enterTo="opacity-100"
       >
         <Popover.Panel>
-          <div className='h-20 w-40 bg-MCS-DarkerBlue flex justify-center items-end rounded-xl absolute top-16 right-8'>
+          <div className='h-20 w-40 bg-MCS-DarkerBlue flex justify-center
+          items-end rounded-xl absolute top-16 right-8 shadow-md'
+          >
             <LogoutButton></LogoutButton>
           </div>
         </Popover.Panel>
