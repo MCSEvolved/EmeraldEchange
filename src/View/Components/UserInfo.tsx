@@ -1,9 +1,13 @@
-import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "./LoginButton";
 import ProfilePopover from "./ProfilePopover";
 
 export default function UserInfo() {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const isLoading = false;
+  const isAuthenticated = true;
+  const user = {
+    name: 'John Doe',
+    picture: 'https://via.placeholder.com/150'
+  }
   if (isLoading) {
     return <div>Loading ...</div>;
   }
