@@ -1,5 +1,5 @@
 {
-  "name": "emerald-exchange",
+  "name": "react-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
     "firebase": "^9.22.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
     "react-router-dom": "^6.11.1",
     "vite-plugin-svgr": "^3.2.0"
   },
