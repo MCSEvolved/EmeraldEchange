@@ -8,13 +8,16 @@ interface Props {
 }
 
 export default function ProfilePopover({ isAuthenticated, userPicture }: Props) {
+
+  
   if (!isAuthenticated) {
     return <AccountIcon className='h-10 w-auto ml-2' fill='#2bc0d3' />
   }
   return (
     <Popover>
       <Popover.Button className='ml-2 mr-1 h-max p-1 rounded-full outline-0 hover:bg-white hover:bg-opacity-20 active:bg-opacity-25 duration-300'>
-        <img src={userPicture} className='h-10 w-auto rounded-full '></img>
+        {userPicture === undefined && <AccountIcon className='h-10 w-auto' fill='#2bc0d3' />}
+        {userPicture !== undefined && <img src={userPicture} className='h-10 w-auto rounded-full '></img>}
       </Popover.Button>
       <Transition
         enter="transition fade-in duration-75"

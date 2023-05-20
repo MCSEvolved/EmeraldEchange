@@ -1,6 +1,6 @@
 interface Props {
   isAuthenticated: Boolean
-  userName: string | undefined
+  userName: string | undefined | null
 }
 
 export default function LoginButton({ isAuthenticated, userName }: Props) {
