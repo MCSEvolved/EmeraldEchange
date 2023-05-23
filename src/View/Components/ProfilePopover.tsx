@@ -1,6 +1,8 @@
 import { Popover, Transition } from '@headlessui/react'
 import { ReactComponent as AccountIcon } from '../Images/AccountIcon.svg'
 import LogoutButton from './LogoutButton'
+import useCurrentUserRoles from '../../Hooks/UseCurrentUserRoles'
+import RoleDisplay from './RoleDisplay'
 
 interface Props {
   isAuthenticated: Boolean
@@ -9,10 +11,11 @@ interface Props {
 
 export default function ProfilePopover({ isAuthenticated, userPicture }: Props) {
 
-  
   if (!isAuthenticated) {
     return <AccountIcon className='h-10 w-auto ml-2' fill='#2bc0d3' />
   }
+
+  const [ roles, loadingRoles ] = useCurrentUserRoles()
   return (
     <Popover>
       <Popover.Button className='ml-2 mr-1 h-max p-1 rounded-full outline-0 hover:bg-white hover:bg-opacity-20 active:bg-opacity-25 duration-300'>
@@ -25,9 +28,10 @@ export default function ProfilePopover({ isAuthenticated, userPicture }: Props) 
         enterTo="opacity-100"
       >
         <Popover.Panel>
-          <div className='h-20 w-40 bg-MCS-DarkerBlue flex justify-center
-          items-end rounded-xl absolute top-16 right-8 shadow-md'
+          <div className='h-40 w-40 bg-MCS-DarkerBlue flex flex-col justify-between 
+          items-center rounded-xl absolute top-16 right-8 shadow-md'
           >
+            <RoleDisplay roles={roles} loadingRoles={loadingRoles}></RoleDisplay>
             <LogoutButton></LogoutButton>
           </div>
         </Popover.Panel>
