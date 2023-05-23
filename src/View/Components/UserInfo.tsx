@@ -9,8 +9,8 @@ export default function UserInfo() {
   const [user, loadingAuthState, error] = useAuthState(auth);
 
   const accessToken = localStorage.getItem('accessToken') || '';
+  
   const [userPictureURL, loadingProfilePicture] = useProfilePicture(accessToken);
-
   
   if (loadingAuthState || loadingProfilePicture) {
     return <p>Loading...</p>
