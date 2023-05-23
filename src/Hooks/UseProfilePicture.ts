@@ -4,6 +4,7 @@ export default function useProfilePicture(accessToken: string) {
   const [userPictureURL, setUserPictureURL] = useState<string | undefined>(undefined);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
+  console.log("this run")
   useEffect(() => {
     fetch('https://graph.microsoft.com/v1.0/me/photo/$value', {
       headers: {
